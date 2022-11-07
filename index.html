@@ -1,0 +1,786 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="ru">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="x-apple-disable-message-reformatting" />
+  <meta content="telephone=no" name="format-detection" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Jobby: подборка вакансий</title>
+  <!--[if (mso 16)]>
+      <style type="text/css">
+        a {text-decoration: none;}
+      </style>
+    <![endif]-->
+    <!--[if gte mso 9]>
+      <style>
+        sup { font-size: 100% !important; }
+      </style>
+    <![endif]-->
+    <!--[if gte mso 9]>
+      <xml>
+        <o:OfficeDocumentSettings>
+        <o:AllowPNG></o:AllowPNG>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+    table {
+      border-spacing: 0;
+      mso-cellspacing: 0;
+      mso-padding-alt: 0;
+    }
+
+    td {
+      padding: 0;
+      margin: 0;
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        border: 0;
+        outline: none;
+        text-decoration: none;
+        -ms-interpolation-mode: bicubic;
+      }
+
+    a {
+      padding: 0;
+      text-decoration: none;
+    }
+
+    body {
+      width: 100%;
+      min-width: 100%;
+      padding: 0;
+      margin: 0;
+      background-color: #ffffff;
+    }
+
+    center {
+      width: 100%;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      table-layout: fixed;
+      background-color: #ffffff;
+    }
+
+    .letter {
+      max-width: 620px;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    }
+
+    .header {
+      padding: 16px 0 0 40px;
+    }
+
+    .logo-wrapper {
+      box-sizing: content-box;
+      width: 96px;
+      padding: 20px 60px 20px 10px;
+    }
+
+    .preheader {
+      display: none !important;
+      max-width: 0px;
+      max-height: 0px;
+      margin: 0;
+      opacity: 0;
+      overflow: hidden;
+      font-size: 0;
+      color: #ffffff;
+      line-height: 1px;
+      mso-line-height-rule:exactly;
+      mso-hide:all;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 620px;
+      padding: 0;
+      margin: 0;
+      font-family: Montserrat, Helvetica, Arial, sans-serif;
+      color: #000000;
+      background-color: #ffffff;
+    }
+
+    .main-heading-wrapper {
+      padding: 10px 40px 20px;
+    }
+
+    .main-heading {
+      margin: 0;
+      font-family: Montserrat, Helvetica, Arial, sans-serif;
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+      mso-line-height-rule: exactly;
+      color: #000000;
+    }
+
+    .vacancies {
+      padding: 0 40px;
+    }
+
+    .vacancy {
+      padding: 9px 0;
+    }
+
+    .vacancy__heading-wrapper {
+      padding: 0 0 4px;
+    }
+
+    .vacancy__heading {
+      margin: 0;
+    }
+
+    .vacancy__heading-link {
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+      line-height: 26px;
+      font-weight: 700;
+      text-decoration: underline;
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+      mso-line-height-rule: exactly;
+      color: #616ae8;
+    }
+
+    .vacancy__subheading {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      font-size: 17px;
+      line-height: 20px;
+      font-weight: 700;
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+      mso-line-height-rule: exactly;
+      color: #555555;
+    }
+
+    .vacancy__text {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+      mso-line-height-rule: exactly;
+      color: #000000;
+    }
+
+    .vacancy__link {
+      font-family: Montserrat, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-decoration: underline;
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+      mso-line-height-rule: exactly;
+      color: #eda5a5;
+    }
+
+    .vacancy__link-wrapper--with-indent {
+      padding-right: 30px;
+    }
+
+    .line {
+      padding: 26px 0;
+    }
+
+    .line__body {
+      width: 226px;
+      height: 46px;
+      background-color: #5d5fef;
+    }
+
+    .line__body--left {
+      border-top-left-radius: 21px;
+      border-bottom-left-radius: 21px;
+    }
+
+    .line__body--right {
+      border-top-right-radius: 21px;
+      border-bottom-right-radius: 21px;
+    }
+
+    .line__indent {
+      width: 13px;
+    }
+
+    .line__head {
+      width: 49px;
+      height: 46px;
+      background-color: #5d5fef;
+      border-radius: 50%;
+    }
+
+    .line--stretch .line__body {
+      width: auto;
+    }
+
+    .line--stretch .line__inner {
+      width: 100%;
+      max-width: 288px
+    }
+
+    .paragraph {
+      padding: 12px 40px;
+    }
+
+    .paragraph__text {
+      margin: 0;
+      font-family: Montserrat, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+      mso-line-height-rule: exactly;
+      color: #000000;
+    }
+
+    .feedback {
+      width: 100%;
+      font-family: Montserrat, Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 400;
+    }
+
+    .feedback__inner {
+      padding: 25px 10px 30px 40px;
+      font-size: 0;
+    }
+
+    .feedback__text-column {
+      vertical-align: top;
+      display: inline-block;
+      width: 190px;
+      font-size: 12px;
+    }
+
+    .feedback__slogan-wrapper {
+      padding: 10px 0 18px;
+    }
+
+    .feedback__slogan {
+      margin: 0;
+      font-family: Montserrat, Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 19px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+      mso-line-height-rule: exactly;
+      color: #040c1b;
+    }
+
+    .feedback__slogan-link {
+      font-family: Montserrat, Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 19px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+      mso-line-height-rule: exactly;
+      color: #5d5fef;
+    }
+
+    .feedback__text-wrapper {
+      padding: 12px 0;
+    }
+
+    .feedback__image-column {
+      vertical-align: top;
+      display: inline-block;
+      width: 336px;
+    }
+
+    .feedback__text {
+      margin: 0;
+      font-family: Montserrat, Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+      mso-line-height-rule: exactly;
+      color: #040c1b;
+    }
+
+    .feedback__accent {
+      font-family: Montserrat, Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+      mso-line-height-rule: exactly;
+      color: #040c1b;
+    }
+
+    .logo-mini {
+      padding: 10px 0;
+    }
+
+    .socials {
+      padding: 20px 30px 10px;
+    }
+
+    .socials__item {
+      padding: 0 10px;
+    }
+
+    .socials__link {
+      display: block;
+    }
+
+    .button-wrapper {
+      padding: 15px 30px 20px;
+    }
+
+    .button {
+      display: inline-block;
+      border-width: 13px 60px;
+      border-style: solid;
+      border-color: #5d5fef;
+      border-radius: 21px;
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      line-height: 19px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+      mso-line-height-rule: exactly;
+      color: #ffffff;
+      background-color: #5d5fef;
+    }
+
+    .link-wrapper {
+      padding: 10px 30px 15px;
+    }
+
+    .link {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.02em;
+      text-decoration: underline;
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+      mso-line-height-rule: exactly;
+      color: #000000;
+    }
+
+    @media screen and (max-width: 575px) {
+      .feedback__text-column,
+      .feedback__image-column {
+        width: 100%;
+      }
+    }
+  </style>
+
+  <!--[if (gte mso 9)|(IE)]>
+    <style type="text/css">
+      table {border-collapse: collapse !important;}
+    </style>
+  <![endif]-->
+
+  <!--[if (gte mso 9)|(IE)]>
+  <xml>
+    <o:OfficeDocumentSettings>
+      <o:AllowPNG/>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+  </xml>
+  <![endif]-->
+</head>
+<body>
+  <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+         body {background-color: #ffffff!important;}
+         body, table, td, p, a {font-family: Helvetica, Arial, sans-serif !important;}
+      </style>
+   <![endif]-->
+  <center>
+
+    <div class="letter">
+
+      <!-- Preheader -->
+      <div class="preheader">
+        Привет! Мы подобрали эти вакансии, исходя из твоего профиля и интересов.
+      </div>
+      <!-- End Preheader -->
+
+      <!--[if (gte mso 9)|(IE)]>
+        <table width="620" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="color:#000000">
+        <tr>
+        <td>
+      <![endif]-->
+
+      <table class="container" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+        <!-- Header -->
+        <tr>
+          <td class="header">
+            <!-- Logo -->
+            <table style="width: 100%;" border="0" cellspacing="0" cellpadding="0" role="presentation">
+              <tr>
+                <!-- Logo -->
+                <td class="logo-wrapper" style="width: 116px">
+                  <a href="https://jobby.ai/student_homepage" target="_blank">
+                    <img src="https://sun9-82.userapi.com/impg/WVWTI8cHdYFK0XAZCNxLdh5YPOna8JDKHneZdg/m_kynuXXb_8.jpg?size=192x64&quality=95&sign=fa7cf5a35faabc19674dd22ecdc4932f&type=album" width="96" height="32" border="0" alt="Логотип в виде буквы J и надписи Jobby." />
+                  </a>
+                </td>
+                <!-- End Logo -->
+
+                <!-- Stretch-line -->
+                <td class="line line--stretch">
+                  <table class="line__inner" align="right" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                    <tr>
+                      <td class="line__head"></td>
+                      <td class="line__indent"></td>
+                      <td class="line__body line__body--left"></td>
+                    </tr>
+                  </table>
+                </td>
+                <!-- End Stretch-line -->
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- End Header -->
+
+        <!-- Heading -->
+        <tr>
+          <td>
+            <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+              <tr>
+                <td class="main-heading-wrapper">
+                  <h1 class="main-heading">
+                    Привет! Мы подобрали эти вакансии, исходя из&nbsp;твоего профиля и интересов.
+                  </h1>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- End Heading -->
+
+        <!-- Vacancies -->
+        <tr>
+          <td class="vacancies">
+            <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+              <!-- Vacancy -->
+              <tr>
+                <td class="vacancy">
+                  <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                    <tr>
+                      <td class="vacancy__heading-wrapper">
+                        <h2 class="vacancy__heading">
+                          <a class="vacancy__heading-link" href="#!" target="_blank">
+                            Junior Digital Manager
+                          </a>
+                        </h2>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="vacancy__subheading">
+                          Media Direction Group
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="vacancy__text">
+                          г. Москва
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="vacancy__text">
+                          Зарплата уточняется на собеседовании
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="vacancy__text">
+                          Полный день
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                          <tr>
+                            <td class="vacancy__link-wrapper vacancy__link-wrapper--with-indent">
+                              <a class="vacancy__link" href="#!" target="_blank">Посмотреть</a>
+                            </td>
+                            <td>
+                              <a class="vacancy__link" href="#!" target="_blank">Откликнуться</a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- End Vacancy -->
+
+              <!-- Vacancy -->
+              <tr>
+                <td class="vacancy">
+                  <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                    <tr>
+                      <td class="vacancy__heading-wrapper">
+                        <h2 class="vacancy__heading">
+                          <a class="vacancy__heading-link" href="#!" target="_blank">
+                            PR-менеджер (стажёр)
+                          </a>
+                        </h2>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="vacancy__subheading">
+                          Правительство Москвы
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="vacancy__text">
+                          г. Москва
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="vacancy__text">
+                          от 24 600 руб.
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="vacancy__text">
+                          Гибкий график
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                          <tr>
+                            <td class="vacancy__link-wrapper vacancy__link-wrapper--with-indent">
+                              <a class="vacancy__link" href="#!" target="_blank">Посмотреть</a>
+                            </td>
+                            <td>
+                              <a class="vacancy__link" href="#!" target="_blank">Откликнуться</a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- End Vacancy -->
+            </table>
+          </td>
+        </tr>
+        <!-- End Vacancies -->
+
+        <!-- Line -->
+        <tr>
+          <td class="line">
+            <table align="left" border="0" cellspacing="0" cellpadding="0" role="presentation">
+              <tr>
+                <td class="line__body line__body--right"></td>
+                <td class="line__indent"></td>
+                <td class="line__head"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- End Line -->
+
+        <!-- Paragraph -->
+        <tr>
+          <td>
+            <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+              <tr>
+                <td class="paragraph">
+                  <p class="paragraph__text">
+                    Заполняй профиль и получай ещё больше подходящих вакансий.
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- End Paragraph -->
+
+        <!-- Paragraph -->
+        <tr>
+          <td>
+            <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+              <tr>
+                <td class="paragraph">
+                  <p class="paragraph__text">
+                    Помни – в среднем нужно откликнуться на 10+ вакансий, чтобы работодатель с тобой связался!
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- End Paragraph -->
+
+        <!-- Feedback -->
+        <tr>
+          <td>
+            <table class="feedback" border="0" cellspacing="0" cellpadding="0" role="presentation">
+              <tr>
+                <td class="feedback__inner">
+                  <!--[if (gte mso 9)|(IE)]>
+                    <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                    <tr>
+                    <td>
+                  <![endif]-->
+                  <table class="feedback__text-column" align="left" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                    <tr>
+                      <td class="feedback__slogan-wrapper">
+                        <p class="feedback__slogan">
+                          Если будут вопросы &mdash; просто напишите <a class="feedback__slogan-link" href="#!" target="_blank">нам в ответ</a>.
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="feedback__text-wrapper">
+                        <p class="feedback__text">
+                          Хорошего дня! <br />
+                          <b class="feedback__accent">Команда Jobby</b>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="logo-mini">
+                        <a href="https://jobby.ai/student_homepage" target="_blank">
+                          <img src="https://sun9-82.userapi.com/impg/WVWTI8cHdYFK0XAZCNxLdh5YPOna8JDKHneZdg/m_kynuXXb_8.jpg?size=192x64&quality=95&sign=fa7cf5a35faabc19674dd22ecdc4932f&type=album" width="50" height="17" border="0" alt="Логотип в виде буквы J и надписи Jobby." />
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                  <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                    <td>
+                  <![endif]-->
+                  <table class="feedback__image-column" align="right" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                    <tr>
+                      <td>
+                        <img src="https://sun9-74.userapi.com/impg/1sigmJTWgEpFllwDe7hEhNE5hIINdqZwd5-u6A/QcpYKkCQkkw.jpg?size=672x372&quality=95&sign=9b659b840ffb214d29a4d7507ea7b59c&type=album" width="336" height="186" border="0" alt="Рисунок: 6 человек дружно стоят рядом." />
+                      </td>
+                    </tr>
+                  </table>
+                  <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                    </tr>
+                    </table>
+                  <![endif]-->
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- End Feedback -->
+
+        <!-- Socials -->
+        <tr>
+          <td class="socials">
+            <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+              <tr>
+                <td class="socials__item">
+                  <a class="socials__link" href="https://t.me/jobbyrussia" target="_blank">
+                    <img src="https://sun9-34.userapi.com/impg/MYLTEm724FUoMhRTsz4CouH1UWLbi9EU3zCIXw/iqZaXG0lr8U.jpg?size=64x64&quality=95&sign=f29b445d787e29aeb9021f490331d6c0&type=album" width="32" height="32" border="0" alt="Telegram." />
+                  </a>
+                </td>
+                <td class="socials__item">
+                  <a class="socials__link" href="https://vk.com/jobbyai" target="_blank">
+                    <img src="https://sun9-80.userapi.com/impg/QN9f17HCNWFWofvYE5Tm5KSQpHMuWQujNTeNlg/TZcVPhp9iKI.jpg?size=64x64&quality=95&sign=b54904550f84b870b6bf92a199270142&type=album" width="32" height="32" border="0" alt="Vkontakte." />
+                  </a>
+                </td>
+                <td class="socials__item">
+                  <a class="socials__link" href="https://www.instagram.com/jobby_russia/" target="_blank">
+                    <img src="https://sun9-19.userapi.com/impg/4jCu03Y65_vx3okuWZi8BBeAw6Rcif07Av11DA/Jnw5xtrSJvE.jpg?size=64x64&quality=95&sign=22ec2b20f61f4765987c34528544aa24&type=album" width="32" height="32" border="0" alt="Instagram." />
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- End Socials -->
+
+        <!-- Button -->
+        <tr>
+          <td>
+            <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+              <tr>
+                <td class="button-wrapper">
+                  <a class="button" href="#!" target="_blank">Перейти на Jobby</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- End Button -->
+
+        <!-- Unsubscribe -->
+        <tr>
+          <td>
+            <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+              <tr>
+                <td class="link-wrapper">
+                  <a class="link" href="https://jobby.ai/student_homepage" target="_blank">Отписка от рассылки</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- End Unsubscribe -->
+      </table>
+
+      <!--[if (gte mso 9)|(IE)]>
+        </td>
+        </tr>
+        </table>
+      <![endif]-->
+
+    </div>
+
+  </center>
+</body>
+</html>
